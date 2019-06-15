@@ -4,7 +4,7 @@ import './App.css';
 import SmurfForm from './components/SmurfForm';
 import Smurfs from './components/Smurfs';
 import axios from 'axios';
-import {Route} from 'react-router-dom';
+import {Route, Link} from 'react-router-dom';
 class App extends Component {
   constructor(props) {
     super(props);
@@ -33,6 +33,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <Link to="/">Smurfs!!!</Link>
+        <Link to="/smurf-form">    Add Smurfs Here</Link>
         <Route 
           path="/smurf-form"
           render={(props) => (
